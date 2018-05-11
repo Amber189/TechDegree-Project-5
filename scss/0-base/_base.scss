@@ -1,0 +1,43 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ul {
+ list-style: none;
+}
+/*unitless values prevent nested tags from inheriting*/
+p{
+
+  text-align: left;
+  margin: em(10px) 0;
+  color: $grey;
+}
+
+.container{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+// .grid__row:first-of-type{
+// 	margin-top: em(50px);
+// 	margin-bottom: em(100px);
+// }
+
+// headlines
+
+.headline{
+  &--primary{
+    @extend %hdln-prim;
+    // @include flex-container;
+  }
+
+  &--secondary{
+    @extend %hdln-sec;
+    // @include flex-container;
+  }
+}

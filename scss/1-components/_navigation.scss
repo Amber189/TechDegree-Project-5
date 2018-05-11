@@ -1,0 +1,28 @@
+
+
+.nav{
+  padding: 0;
+ // @include flex-container;
+ @include e(item){
+   //extend these
+   @extend %nav__item-disp;
+   &:hover{// & selector undoes nesting in css
+     background-color: $color-primary;
+     a{
+       color: $white;
+        }
+      }
+    a {
+       @extend %nav__item-link;
+       color: $grey;
+   }
+ }
+}
+
+ @media (min-width: 769px){
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    align-items: baseline;
+
+   }

@@ -1,0 +1,23 @@
+.theme__colors.grid {
+  @include bg-colors2($ui-colors--lighten);
+  margin: 1em auto;
+  padding: 12px 0;
+  font:  100% 'Open Sans', sans-serif;
+  border: none;
+  border-radius: $border--default;
+  color: $grey;
+}
+
+// .theme__colors{
+//
+// }
+
+.grid{
+  @include e(row){
+    @extend %grid-margin;
+  }
+}
+.grid__row:first-of-type{
+	margin-top: em(50px);
+	margin-bottom: em(100px);
+}

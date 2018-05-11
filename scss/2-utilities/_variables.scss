@@ -1,0 +1,121 @@
+
+//Font Stacks
+
+$font-url--google     :'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+$font-family--primary : 'Open Sans', sans-serif;
+
+//Font Weights
+
+$font-weight--thin      :100;
+$font-weight--light     :300;
+$font-weight--regular   :400;
+$font-weight--semi-bold :600;
+$font-weight--bold      :700;
+$font-weight--ultra-bold:900;
+
+//descriptive Base theme__colors
+
+$white      : #fff;
+$black      : #0b0b0b;
+$grey       : #797e83;
+
+$sea-green  : #61EDD3;
+$malibu-blu : #87E5F7;
+
+
+// color usage
+
+$color-primary    : $sea-green;
+$color-secondary  : $malibu-blu;
+
+$emerald-green  : #46D875;
+$deep-blush     : #DB5857;
+$mango-tango    : #E77740;
+$lilac-purple   : #9A75CC;
+
+// Color Palette Modifiers
+$palettes: (
+  grey: (
+    xx-light : lighten($grey, 43%),
+    x-light  : lighten($grey, 35%),
+    light    : lighten($grey, 12%),
+    base     : $grey,
+    dark     : darken($grey, 8%),
+    x-dark   : darken($grey, 16%)
+  ),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+
+// $palettes: (
+//   turquoise: (
+//     base : $sea-green,
+//     light: lighten($sea-green, 20%)
+//   ),
+//   blue : (
+//     base : $malibu-blu,
+//     light: lighten($malibu-blu, 20%)
+//   ),
+//   green : (
+//     base : $sea-green,
+//     light: lighten($sea-green, 20%)
+//   ),
+//   red : (
+//     base : $deep-blush,
+//     light: lighten($deep-blush, 20%)
+//   ),
+//   orange : (
+//     base : $mango-tango,
+//     light: lighten($mango-tango, 20%)
+//   ),
+//   purple : (
+//     base : $lilac-purple,
+//     light: lighten($lilac-purple, 20%)
+//   ),
+// );
+
+// UI Colors
+
+$ui-colors : (
+  default : $malibu-blu,
+  success : $emerald-green,
+  error   : $deep-blush,
+  warning : $mango-tango,
+  info    : $lilac-purple
+
+);
+
+$ui-colors--lighten : (
+  col--12  : lighten($sea-green, 15%),
+  col--4   : lighten($malibu-blu, 15%),
+  col--5   : lighten($emerald-green, 15%),
+  col--7   : lighten($deep-blush, 15%),
+  col--8   : lighten($mango-tango, 15%),
+  col--3   : lighten($lilac-purple, 15%)
+);
+
+// text
+
+$base__font-size  : 16px;
+$base__line       : 24px;
+
+// buttons and such
+
+$border--default  : 4px;
+
+
+// breakpoints
+$break-xs  : 575px;
+$break-s   : 576px;
+$break-m   : 768px;
+$break-l   : 992px;
+$break-xl  : 1024px;
+
+
+// Path to assets
+
+$path--rel    : "../img";

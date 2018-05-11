@@ -1,0 +1,32 @@
+.form {
+  @extend %flex-column;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 0 20px;
+  @include e(label){
+    @include m(hidden){
+      visibility: hidden;
+    }
+  }
+  @include e(input){
+    margin-bottom: .25em;
+    padding: .75em;
+    font-weight: $font-weight--bold;
+    border-bottom:  solid 5px $color-primary;
+    border-top-style: none;
+    border-left-style: none;
+    border-right:none;
+  }
+
+  @include e(btn) {
+    @extend %btn;
+
+  }
+}
+
+// .form{
+//   display: flex;
+//   flex-direction: column;
+//
+//   width: auto;
+// }

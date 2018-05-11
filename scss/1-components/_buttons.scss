@@ -1,0 +1,7 @@
+.btn {
+  @extend %btn;
+  color: $white;
+  text-transform: uppercase;
+  @include bg-colors($ui-colors);
+
+}

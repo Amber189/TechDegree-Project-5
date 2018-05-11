@@ -1,0 +1,10 @@
+.img {
+  @include m(avatar) {
+    
+
+  }
+  @include m(frame) {
+    padding: em(10px);
+    border: 1px solid palette(grey, x-light);
+  }
+}
