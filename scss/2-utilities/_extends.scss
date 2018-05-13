@@ -1,13 +1,9 @@
 // Navigation
-%nav {
-
-}
 
 %nav__item-disp{
   margin: em(5px) auto;
   padding: em(5px);
   border-radius: em(4px);
-
 }
 
 %nav__item-link{
@@ -39,15 +35,47 @@
   margin-top: em(35px);
 }
 
+// blockquote
+
+%blockquote{
+  padding-left: em(10px);
+  border-left: solid em(6px) $color-primary;
+  border-radius: 3px 0 0 3px;
+  font: italic 150% 'Open Sans', sans-serif  ;
+  color: $grey;
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+}
+// margins
+%margin-sm{
+  margin:em(5px) auto;
+}
+%margin-m{
+  margin:em(15px) auto;
+}
+%margin-lg{
+  margin:em(20px) auto;
+}
+
 // buttons
 %btn{
   margin: em(16px) auto;
   padding: em(12px) em(30px);
   font:  em(14px) 'Open Sans', sans-serif;
+  width: 100%;
   border: none;
   border-radius: $border--default;
   &:hover{
     opacity: 75%;
+  }
+}
+
+%clearfix{
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -56,6 +84,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 %flex-column{
   display: flex;
   flex-direction: column;

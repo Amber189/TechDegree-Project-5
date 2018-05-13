@@ -13,8 +13,13 @@ ul {
 p{
 
   text-align: left;
-  margin: em(10px) 0;
+  margin: em(25px) 0;
   color: $grey;
+	& .link{
+	  text-decoration: none;
+	  color: $malibu-blu;
+	  margin: 0;
+	}
 }
 
 .container{
@@ -23,10 +28,7 @@ p{
   margin: 0 auto;
 }
 
-// .grid__row:first-of-type{
-// 	margin-top: em(50px);
-// 	margin-bottom: em(100px);
-// }
+
 
 // headlines
 
@@ -41,3 +43,23 @@ p{
     // @include flex-container;
   }
 }
+
+
+
+
+// blockquote
+
+.blockquote{
+	@extend %blockquote;
+}
+
+// images
+
+// .img {
+// 	&--avatar,
+// 	&--frame{
+//   margin-bottom: em(24px);
+//   max-width: 100%;
+//   height: auto;
+// 	}
+// }

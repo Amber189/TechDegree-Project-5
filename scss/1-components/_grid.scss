@@ -1,23 +1,59 @@
 .theme__colors.grid {
   @include bg-colors2($ui-colors--lighten);
   margin: 1em auto;
-  padding: 12px 0;
+  padding: em(12px) 0;
   font:  100% 'Open Sans', sans-serif;
   border: none;
   border-radius: $border--default;
   color: $grey;
 }
 
-// .theme__colors{
-//
-// }
 
-.grid{
-  @include e(row){
+
+.grid__row{
     @extend %grid-margin;
-  }
-}
+    @include mq (medium){
+      @include bp-flex;
+    }
+
+    }
+
+
+
 .grid__row:first-of-type{
 	margin-top: em(50px);
 	margin-bottom: em(100px);
 }
+
+//
+//
+// }
+
+// calculate grid columns
+// @media (min-width: $break-m){
+//
+//   @for $i from 1 through $g-col-count {
+//
+//     $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+//     $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+//     // generate column modifier classes
+//
+//     .grid__col--#{$i} {
+//       width: percentage($target / $context);
+//     }
+//   }
+// }
+// column styles
+// [class^="grid__col--"]{
+//   @media (min-width: 769px){
+//     @include doubly(percentage($g-gutter-width/$context)){
+//     float: left;
+//     min-height: 1px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     &:last-of-type{
+//       float: right;
+//     }
+//   }
+// }
+// }

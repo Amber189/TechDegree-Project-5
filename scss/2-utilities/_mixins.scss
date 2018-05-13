@@ -17,9 +17,35 @@
 
 
 
-// Media Queries
+
+// grid rows
+@mixin bp-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 
+@mixin mq($break){
+  @if $break == "small" {
+    @media (min-width: $break-s) and (max-width: $brkpoint-md){
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $break-m +1){
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $break-l){
+      @content;
+    }
+  }
+  @else {
+    @error "no value retrieved for `#{$break}"
+  }
+}
 
 
 
@@ -39,11 +65,20 @@
   }
 }
 
-
+// image replacement
 
 @mixin img-replace($img, $w, $h, $disp: block) {
   background-image: url('#{$path--rel}/#{$img}');
 
 }
 
-// grid
+// adjacnet sibling margins
+
+@mixin doubly($margin: 1em) {
+  & + & {
+    margin-left: $margin;
+    @content;
+  }
+}
+
+// Flexbox

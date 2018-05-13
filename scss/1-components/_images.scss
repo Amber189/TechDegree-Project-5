@@ -1,10 +1,13 @@
 .img {
   @include m(avatar) {
-    
+    @extend %margin-m;
 
   }
   @include m(frame) {
+    @extend %margin-m;
     padding: em(10px);
     border: 1px solid palette(grey, x-light);
+    margin-bottom: em(20px);
+
   }
 }

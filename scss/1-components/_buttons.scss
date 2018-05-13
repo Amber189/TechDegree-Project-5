@@ -1,7 +1,26 @@
-.btn {
-  @extend %btn;
-  color: $white;
-  text-transform: uppercase;
+.btn{
   @include bg-colors($ui-colors);
+
+  }
+
+
+[class^="btn--"]{
+    @extend %btn;
+    color: $white;
+    text-transform: uppercase;
+
+    margin-right: em(25px);
+
+}
+
+
+// this also selects and styles the one grid system thing
+.grid__row .grid__col--12{
+  @extend %flex-column;
+  @include mq (medium){
+    width: 100%;
+
+    @include bp-flex;
+  }
 
 }

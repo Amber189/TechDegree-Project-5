@@ -1,10 +1,10 @@
 
 
 .nav{
-  padding: 0;
- // @include flex-container;
+  @include mq (medium){
+    @include bp-flex;
+  }
  @include e(item){
-   //extend these
    @extend %nav__item-disp;
    &:hover{// & selector undoes nesting in css
      background-color: $color-primary;

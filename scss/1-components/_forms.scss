@@ -1,7 +1,7 @@
 .form {
   @extend %flex-column;
   justify-content: center;
-  margin: 1em auto;
+  margin: em(15px) em(15px);
   padding: 0 20px;
   @include e(label){
     @include m(hidden){
@@ -17,10 +17,12 @@
     border-left-style: none;
     border-right:none;
   }
-
   @include e(btn) {
     @extend %btn;
 
+  }
+  .img--avatar{
+    align-self: center;
   }
 }
 

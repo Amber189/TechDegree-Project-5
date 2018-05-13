@@ -32,7 +32,7 @@ $emerald-green  : #46D875;
 $deep-blush     : #DB5857;
 $mango-tango    : #E77740;
 $lilac-purple   : #9A75CC;
-
+$cornflower-blue: #0A76A5;
 // Color Palette Modifiers
 $palettes: (
   grey: (
@@ -95,7 +95,8 @@ $ui-colors--lighten : (
   col--5   : lighten($emerald-green, 15%),
   col--7   : lighten($deep-blush, 15%),
   col--8   : lighten($mango-tango, 15%),
-  col--3   : lighten($lilac-purple, 15%)
+  col--3   : lighten($lilac-purple, 15%),
+  col--6   : lighten($cornflower-blue, 15%)
 );
 
 // text
@@ -106,6 +107,13 @@ $base__line       : 24px;
 // buttons and such
 
 $border--default  : 4px;
+
+// grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
 
 
 // breakpoints
