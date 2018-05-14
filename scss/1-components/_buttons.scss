@@ -8,19 +8,24 @@
     @extend %btn;
     color: $white;
     text-transform: uppercase;
-
-    margin-right: em(25px);
+    width: 100%;
+    @include mq (medium){
+      width: 18%;
+    }
+    // margin-right: em(25px);
 
 }
-
+// .grid__col--12{
+//   width: 100%;
+// }
 
 // this also selects and styles the one grid system thing
 .grid__row .grid__col--12{
   @extend %flex-column;
+  width: 100%;
   @include mq (medium){
-    width: 100%;
-
     @include bp-flex;
+
   }
 
 }

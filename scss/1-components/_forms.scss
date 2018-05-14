@@ -19,6 +19,8 @@
   }
   @include e(btn) {
     @extend %btn;
+    
+    width: 100%;
 
   }
   .img--avatar{
