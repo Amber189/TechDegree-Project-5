@@ -99,6 +99,24 @@ $ui-colors--lighten : (
   col--6   : lighten($cornflower-blue, 15%)
 );
 
+// $grid : (
+// col--4   : repeat( 3, 1fr),
+// col--5   : 1fr,
+// col--7   : 2fr,
+// col--8   : 2fr,
+// col--3   : repeat( 4, 1fr),
+// col--6   : repeat( 2, 1fr)
+// );
+
+$grid-number  : (
+col--4   : 1,
+col--5   : 1,
+col--7   : 2,
+col--8   : 2,
+col--3   : 1,
+col--6   : 1
+);
+
 // text
 
 $base__font-size  : 16px;
@@ -114,6 +132,7 @@ $g-col-width    : 65px;
 $g-gutter-width : 20px;
 $g-col-count    : 12;
 $g-cont-max-w   : 1050px;
+
 
 
 // breakpoints

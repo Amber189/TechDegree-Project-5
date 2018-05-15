@@ -1,11 +1,25 @@
+.theme__colors.centered.grid__col--7{
+  flex-grow: 0;
+  flex-basis: 50%;
+}
+// .theme__colors.grid {
+//   @include bg-colors2($ui-colors--lighten);
+//   @include g-style;
+//   @include mq (medium){
+//     @include g-grow;
+//
+//   }
+// }
+
+
 .theme__colors.grid {
   @include bg-colors2($ui-colors--lighten);
-  margin: 1em auto;
-  padding: em(12px) 0;
-  font:  100% 'Open Sans', sans-serif;
-  border: none;
-  border-radius: $border--default;
-  color: $grey;
+  @include g-style;
+  @include mq (medium){
+    @include g-grow;
+    margin-left: em(5px);
+
+  }
 }
 
 

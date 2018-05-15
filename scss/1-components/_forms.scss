@@ -16,21 +16,18 @@
     border-top-style: none;
     border-left-style: none;
     border-right:none;
-  }
-  @include e(btn) {
-    @extend %btn;
-    
-    width: 100%;
 
-  }
-  .img--avatar{
-    align-self: center;
   }
 }
 
-// .form{
-//   display: flex;
-//   flex-direction: column;
-//
-//   width: auto;
-// }
+  .form .btn--default{
+      width: 100%;
+      @include mq (medium){
+      width: 100%;
+    }
+
+  }
+
+  .img--avatar{
+    align-self: center;
+  }

@@ -26,6 +26,76 @@
   @content;
 }
 
+// @mixin bp-grid{
+//   display: grid;
+//   grid-template-columns:
+// }
+
+// @mixin grid-layout($grid){
+//   @each $theme, $value in $grid {
+//     &__#{$theme} {
+//       display:grid;
+//       grid-template-columns: $value;
+//     }
+//   }
+// }
+
+
+@mixin grid-layout{
+  @for $i from 1 through $g-col-count {
+    &__col--#{$i}{
+      text-align: center;
+      @if $i == 7{
+        grid-template-columns: 2/3;
+      } @else if $i == 8{
+        grid-template-columns: 2/3;
+      }
+      @else  {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
+
+@mixin g-style{
+  @for $i from 1 through $g-col-count {
+    &__col--#{$i}{
+      @extend %grid-style;
+      }
+    }
+}
+
+@mixin g-grow{
+  @for $i from 1 through $g-col-count {
+    &__col--#{$i}{
+      margin-left: em(5px);
+      margin-right: em(5px);
+      text-align: center;
+      @if $i == 7{
+        flex-grow: 2;
+      } @else if $i == 8{
+        flex-grow: 2;
+      }
+      @else  {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+
+
+
+// @mixin g-grow{
+//   @each $theme, $value in $grid-number{
+//     &__#{$theme} {
+//       @include grid-extend;
+//     }
+//   }
+// }
+//
+
+
 
 @mixin mq($break){
   @if $break == "small" {
@@ -48,11 +118,7 @@
   }
 }
 
-
-
-
-
-// BEM selectors
+//BEM Selector
 
 @mixin e($element) {
   &__#{$element} {

@@ -92,9 +92,20 @@
 
 }
 
+%grid-style{
+  margin: 1em auto;
+  padding: em(12px) 0;
+  font:  100% 'Open Sans', sans-serif;
+  border: none;
+  border-radius: $border--default;
+  color: $grey;
+  text-align: left;
+
+}
+
 // Panels
 %grid-margin{
-  margin: em(50px) auto;
+  margin: em(30px) auto;
 }
 %grid-padding{
   padding: em(15px) 0;
