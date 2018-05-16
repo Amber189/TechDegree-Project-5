@@ -76,7 +76,7 @@
   }
 }
 
-//BEM Selector
+// BEM Selector
 
 @mixin e($element) {
   &__#{$element} {

@@ -57,9 +57,9 @@
 %margin-m{
   margin:em(15px) auto;
 }
-%margin-lg{
-  margin:em(20px) auto;
-}
+// %margin-lg{
+//   margin:em(20px) auto;
+// }
 
 // buttons
 %btn{
@@ -75,13 +75,14 @@
 }
 
 // Float clearfix
-%clearfix{
-  &:after{
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+
+// %clearfix{
+//   &:after{
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+// }
 
 
 // Flexbox
@@ -109,13 +110,12 @@
   border-radius: $border--default;
   color: $grey;
   text-align: left;
-
 }
 
 // Universal sizing
 %grid-margin{
   margin: em(30px) auto;
 }
-%grid-padding{
-  padding: em(15px) 0;
-}
+// %grid-padding{
+//   padding: em(15px) 0;
+// }
