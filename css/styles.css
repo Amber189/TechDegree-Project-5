@@ -66,28 +66,6 @@
 .grid__row {
   margin: 1.875em auto; }
 
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-ul {
-  list-style: none; }
-
-/*unitless values prevent nested tags from inheriting*/
-p {
-  text-align: left;
-  margin: 1.5625em 0;
-  color: #797e83; }
-  p .link {
-    text-decoration: none;
-    color: #87E5F7;
-    margin: 0; }
-
-.container {
-  text-align: center;
-  width: 90%;
-  margin: 0 auto; }
-
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -387,6 +365,29 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+/*unitless values prevent nested tags from inheriting*/
+p {
+  text-align: left;
+  margin: 1.5625em 0;
+  color: #797e83; }
+  p .link {
+    text-decoration: none;
+    color: #87E5F7;
+    margin: 0; }
+
+.container {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto; }
+
 .container {
   font-size: 16px;
   line-height: 1.5;
@@ -519,7 +520,6 @@ template {
 
 .img--avatar {
   align-self: center; }
-
 .img--frame {
   padding: 0.625em;
   max-width: 100%;

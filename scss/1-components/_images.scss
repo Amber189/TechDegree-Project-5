@@ -1,7 +1,7 @@
 .img {
   @include m(avatar) {
     @extend %margin-m;
-
+    align-self: center;
   }
   @include m(frame) {
     @extend %margin-m;
@@ -9,6 +9,5 @@
     max-width: 100%;
     border: 1px solid palette(grey, x-light);
     margin-bottom: em(20px);
-
   }
 }
