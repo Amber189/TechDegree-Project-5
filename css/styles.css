@@ -404,11 +404,6 @@ template {
 .nav__item a {
   color: #797e83; }
 
-@media (min-width: 769px) {
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-flow: row wrap;
-  align-items: baseline; }
 .theme__colors.centered.grid__col--7 {
   flex-grow: 0;
   flex-basis: 50%; }
@@ -527,6 +522,7 @@ template {
 
 .img--frame {
   padding: 0.625em;
+  max-width: 100%;
   border: 1px solid #d6d7d9;
   margin-bottom: 1.25em; }
 

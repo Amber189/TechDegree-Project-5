@@ -37,29 +37,14 @@ p{
     @extend %hdln-prim;
     // @include flex-container;
   }
-
   &--secondary{
     @extend %hdln-sec;
     // @include flex-container;
   }
 }
 
-
-
-
 // blockquote
 
 .blockquote{
 	@extend %blockquote;
 }
-
-// images
-
-// .img {
-// 	&--avatar,
-// 	&--frame{
-//   margin-bottom: em(24px);
-//   max-width: 100%;
-//   height: auto;
-// 	}
-// }

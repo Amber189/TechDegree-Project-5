@@ -15,10 +15,7 @@
   }
 }
 
-
-
-
-// grid rows
+// Flexbox, used in mq
 @mixin bp-flex{
   display: flex;
   flex-direction: row;
@@ -26,36 +23,7 @@
   @content;
 }
 
-// @mixin bp-grid{
-//   display: grid;
-//   grid-template-columns:
-// }
-
-// @mixin grid-layout($grid){
-//   @each $theme, $value in $grid {
-//     &__#{$theme} {
-//       display:grid;
-//       grid-template-columns: $value;
-//     }
-//   }
-// }
-
-
-@mixin grid-layout{
-  @for $i from 1 through $g-col-count {
-    &__col--#{$i}{
-      text-align: center;
-      @if $i == 7{
-        grid-template-columns: 2/3;
-      } @else if $i == 8{
-        grid-template-columns: 2/3;
-      }
-      @else  {
-        grid-template-columns: auto;
-      }
-    }
-  }
-}
+// grid design style
 
 @mixin g-style{
   @for $i from 1 through $g-col-count {
@@ -64,6 +32,8 @@
       }
     }
 }
+
+//grid layout
 
 @mixin g-grow{
   @for $i from 1 through $g-col-count {
@@ -83,19 +53,7 @@
   }
 }
 
-
-
-
-// @mixin g-grow{
-//   @each $theme, $value in $grid-number{
-//     &__#{$theme} {
-//       @include grid-extend;
-//     }
-//   }
-// }
-//
-
-
+// Media Query
 
 @mixin mq($break){
   @if $break == "small" {
@@ -139,13 +97,18 @@
 
 }
 
-// adjacnet sibling margins
-
-@mixin doubly($margin: 1em) {
-  & + & {
-    margin-left: $margin;
-    @content;
-  }
-}
-
-// Flexbox
+// @mixin grid-layout{
+//   @for $i from 1 through $g-col-count {
+//     &__col--#{$i}{
+//       text-align: center;
+//       @if $i == 7{
+//         grid-template-columns: 2/3;
+//       } @else if $i == 8{
+//         grid-template-columns: 2/3;
+//       }
+//       @else  {
+//         grid-template-columns: auto;
+//       }
+//     }
+//   }
+// }

@@ -2,14 +2,6 @@
   flex-grow: 0;
   flex-basis: 50%;
 }
-// .theme__colors.grid {
-//   @include bg-colors2($ui-colors--lighten);
-//   @include g-style;
-//   @include mq (medium){
-//     @include g-grow;
-//
-//   }
-// }
 
 
 .theme__colors.grid {
@@ -18,20 +10,15 @@
   @include mq (medium){
     @include g-grow;
     margin-left: em(5px);
-
   }
 }
-
-
 
 .grid__row{
     @extend %grid-margin;
     @include mq (medium){
       @include bp-flex;
-    }
-
-    }
-
+  }
+}
 
 
 .grid__row:first-of-type{
@@ -39,9 +26,7 @@
 	margin-bottom: em(100px);
 }
 
-//
-//
-// }
+// Perhapsly useful code in the future?
 
 // calculate grid columns
 // @media (min-width: $break-m){

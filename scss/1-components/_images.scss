@@ -6,6 +6,7 @@
   @include m(frame) {
     @extend %margin-m;
     padding: em(10px);
+    max-width: 100%;
     border: 1px solid palette(grey, x-light);
     margin-bottom: em(20px);
 

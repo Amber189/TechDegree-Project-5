@@ -1,28 +1,30 @@
-
+// Main nav
 
 .nav{
   @include mq (medium){
     @include bp-flex;
   }
- @include e(item){
-   @extend %nav__item-disp;
-   &:hover{// & selector undoes nesting in css
-     background-color: $color-primary;
-     a{
-       color: $white;
+    @include e(item){
+     @extend %nav__item-disp;
+     &:hover{// & selector undoes nesting in css
+       background-color: $color-primary;
+       a{
+         color: $white;
+          }
         }
-      }
-    a {
-       @extend %nav__item-link;
-       color: $grey;
+      a {
+         @extend %nav__item-link;
+         color: $grey;
+     }
    }
- }
 }
 
- @media (min-width: 769px){
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    align-items: baseline;
+// Media query
 
-   }
+ // @include mq(medium){
+ //    flex-direction: row;
+ //    justify-content: flex-end;
+ //    flex-flow: row wrap;
+ //    align-items: baseline;
+ //
+ //   }

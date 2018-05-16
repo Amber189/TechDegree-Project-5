@@ -16,6 +16,8 @@
   justify-content: center;
 
 }
+
+
 // headline
 
 %hdln-prim {
@@ -47,6 +49,7 @@
   margin: 0 auto;
   text-align: left;
 }
+
 // margins
 %margin-sm{
   margin:em(5px) auto;
@@ -71,6 +74,7 @@
   }
 }
 
+// Float clearfix
 %clearfix{
   &:after{
     content: "";
@@ -79,10 +83,13 @@
   }
 }
 
+
+// Flexbox
+
 %flex-row{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 %flex-column{
@@ -91,6 +98,8 @@
   justify-content: space-between;
 
 }
+
+// Grid-col styles
 
 %grid-style{
   margin: 1em auto;
@@ -103,7 +112,7 @@
 
 }
 
-// Panels
+// Universal sizing
 %grid-margin{
   margin: em(30px) auto;
 }

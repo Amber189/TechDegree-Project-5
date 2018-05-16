@@ -50,34 +50,6 @@ $palettes: (
 	)
 );
 
-
-// $palettes: (
-//   turquoise: (
-//     base : $sea-green,
-//     light: lighten($sea-green, 20%)
-//   ),
-//   blue : (
-//     base : $malibu-blu,
-//     light: lighten($malibu-blu, 20%)
-//   ),
-//   green : (
-//     base : $sea-green,
-//     light: lighten($sea-green, 20%)
-//   ),
-//   red : (
-//     base : $deep-blush,
-//     light: lighten($deep-blush, 20%)
-//   ),
-//   orange : (
-//     base : $mango-tango,
-//     light: lighten($mango-tango, 20%)
-//   ),
-//   purple : (
-//     base : $lilac-purple,
-//     light: lighten($lilac-purple, 20%)
-//   ),
-// );
-
 // UI Colors
 
 $ui-colors : (
@@ -99,14 +71,8 @@ $ui-colors--lighten : (
   col--6   : lighten($cornflower-blue, 15%)
 );
 
-// $grid : (
-// col--4   : repeat( 3, 1fr),
-// col--5   : 1fr,
-// col--7   : 2fr,
-// col--8   : 2fr,
-// col--3   : repeat( 4, 1fr),
-// col--6   : repeat( 2, 1fr)
-// );
+
+// Flexbox
 
 $grid-number  : (
 col--4   : 1,
